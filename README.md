@@ -16,12 +16,15 @@ Pensado como uma ferramenta para adquirir experiência com um framework de desen
 Este Projeto segue o que consta no tutorial disponível no site do prório Flask, porém planeja-se um upgrade do projeto para o futuro, com uma estilizaçao de paginas mais elaborada.
 
 ###
+
+* [**Tutorial**](https://flask.palletsprojects.com/tutorial/) - Utilizado para elaborar o projeto.
+
+
+## 🧩 Etapas do projeto:
+* Todo projeto será realizado com micro atualizações respeitando a o pensamento filosófico: " Micro mudançãs geram grandes resultados a longo prazo!".
+
 <!-- 
 <p>
-    * [**Tutorial**](https://flask.palletsprojects.com/tutorial/) - Utilizado para elaborar o projeto.
-
-    ## 🧩 Etapas do projeto:
-    * A primeira etapa do projeto é concluir o blog com suas funcionalidades seguindo o tutorial.
     * A segunda etapa consiste em estruturar o projeto e o repositório para distribuição e teste do projeto. 
     * A terceira etapa consiste em preparar o projeto para implementação em um serviço de hospedagem web tornando-o acessível.
     * Concluído a terceira etapa inicia-se a estilização do projeto de forma mais autonoma com foco em responsividade e explorando novas possibilidades.
