@@ -1,21 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=1, initial-scale=1.0">
+    <meta name="viewport" content="width=device-widht, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
     <title>HelthMoney</title>
 </head>
-<body>
 
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../static/midia/logo.ico" alt="EBW" width="30" height="24" class="img-fluid  "/>
+                HelthMoney
+            </a>
+            <button class="btn btn-outline-success me-2" type="button">Add Extrato</button>
+        </div>
+    </nav>
+
+    <!-- Conteúdo da pagina -->
     <div class="container">
-        <div class="square">
-            <div class="bar green" data-height="{{ green }}">Receitas</div>
-            <div class="bar orange" data-height="{{ orange }}">Despesas</div>
+        <div class="row justify-content-center align-items-center g-2">
+            <!-- primeiro quadrado -->
+            <div class="col-6      ">
+
+                <div class="container">
+                    <div class="card text-center">
+                        <img class="img-fluid card-img-top " src="../static/midia/Ebw_Invest_wallpaper.jpg" alt="EBW Invest" />
+                        <div class="card-body">
+                            <h4 class="card-title">Saúde financeira</h4>
+                            <p class="card-text">Lembre-se tudo que você precisa fazer é gastar menos do ganha!</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- segundo quadrado -->
+            <div class="col-6      ">
+                <div class="row justify-content-center align-items-center g-2">
+                    <div class="square">
+
+                        <div class="text-center bar green" data-height="{{ green }}">Receitas</div>
+                        <div class="text-center bar orange" data-height="{{ orange }}">Despesas</div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
         </div>
 
     </div>
 
-    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script src="../static/js/bootstrap.bundle.min.js"></script>.
+    <script src="{{ url_for('static', filename='script.js') }}"></script>.
 </body>
+
 </html>
