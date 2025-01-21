@@ -14,5 +14,9 @@ def home():
     print(barra)
     return render_template("index.html", green=barra[0], orange=barra[1])
 
+@app.route("/upload")
+def upload():
+    return render_template("uploade/upload.html")
+
 if __name__=="__main__":
     app.run()

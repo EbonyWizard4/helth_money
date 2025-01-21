@@ -1,13 +1,13 @@
 ![Apresentação](./app/static/midia/Ebw_Invest_wallpaper.jpg)
 
-# Tutorial Flaskk
+# Sistema de controle financeiro:
 
 Este Projeto acadêmico visa a criação de um aplicativo de controle financeiro utilizando conceitos de diversos especialistas em economia e finaças de forma simplificada e automatizada.
 
 ## 🧩 Propostas do projeto:
 
 <br/>
-Pensado como uma ferramenta para adquirir experiência com um framework de desenvolvimento web utilizando python, a conclusão deste projeto possibilita uma gama ilimitada de possibilidades para futuros projetos facilmente escalaveis para cloud computing.
+Pensado como uma ferramenta para facilitar a gestão financeira o projeto tem como fundamento aplicar conceitos de finanças pessoais divulgados por autores no assunto.
 
 <br/>
 Este Projeto segue o que consta no tutorial disponível no site do prório Flask como base, utilizando arquitetura e conceitos sugeridos para a ferramenta.
@@ -21,10 +21,10 @@ Este Projeto segue o que consta no tutorial disponível no site do prório Flask
 
 ## 📷 Etapas do projeto:
 
-![Tela](./app/static/midia/TelaAtual.png)
+![Tela](./app/static/midia/TelaAtual.gif)
 
 
- Na última atualização foram realizados updates da interface e implementado a atualização de valores do gráfico através do backend. 
+ Na última atualização foram realizados updates na estrutua html possibilitando reutilizar elementos da tela e implementado uma nova tela com botões de navegação funcionais. 
     
     Todo projeto será realizado com micro atualizações respeitando a a filosofia do projeto: " Micro mudançãs geram grandes resultados a longo prazo!".
 
@@ -148,7 +148,11 @@ As tecnologias utilizadas neste projeto:
 * Um agradecimento publico 🫂;
 * Um insentivo financeiro .
 
-![QR CODE para pix](<Midia/Img/QRCode Pix.png>)
+##
+
+![QR CODE para linkedin](<app/static/midia/Qrlogo-in.png>)
+
+
 
 ---
 Editado por [Jhone Antonio](www.linkedin.com/in/antoniojhone)
