@@ -1,27 +1,32 @@
-![Apresentação](midia/Ebw_Invest_wallpaper.jpg)
+![Apresentação](./app/static/midia/Ebw_Invest_wallpaper.jpg)
 
 # Tutorial Flaskk
 
 Este Projeto acadêmico visa a criação de um aplicativo de controle financeiro utilizando conceitos de diversos especialistas em economia e finaças de forma simplificada e automatizada.
 
-
-## 📷 Captura de tela do blg 
-
-![Blog](midia/TelaAtual.png)
+## 🧩 Propostas do projeto:
 
 <br/>
 Pensado como uma ferramenta para adquirir experiência com um framework de desenvolvimento web utilizando python, a conclusão deste projeto possibilita uma gama ilimitada de possibilidades para futuros projetos facilmente escalaveis para cloud computing.
 
 <br/>
-Este Projeto segue o que consta no tutorial disponível no site do prório Flask, porém planeja-se um upgrade do projeto para o futuro, com uma estilizaçao de paginas mais elaborada.
+Este Projeto segue o que consta no tutorial disponível no site do prório Flask como base, utilizando arquitetura e conceitos sugeridos para a ferramenta.
 
 ###
 
 * [**Tutorial**](https://flask.palletsprojects.com/tutorial/) - Utilizado para elaborar o projeto.
 
+<br/>
 
-## 🧩 Etapas do projeto:
-* Todo projeto será realizado com micro atualizações respeitando a o pensamento filosófico: " Micro mudançãs geram grandes resultados a longo prazo!".
+
+## 📷 Etapas do projeto:
+
+![Tela](./app/static/midia/TelaAtual.png)
+
+
+ Na última atualização foram realizados updates da interface e implementado a atualização de valores do gráfico através do backend. 
+    
+    Todo projeto será realizado com micro atualizações respeitando a a filosofia do projeto: " Micro mudançãs geram grandes resultados a longo prazo!".
 
 <!-- 
 <p>
