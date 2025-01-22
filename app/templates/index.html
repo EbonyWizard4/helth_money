@@ -24,7 +24,8 @@
     </nav>
 
     <!-- Conteúdo da pagina -->
-    <div class="container">
+
+    <div class="conteudo container">
         {% block conteúdo %}
         <div class="row justify-content-center align-items-center g-2">
             <!-- primeiro quadrado -->
@@ -46,6 +47,9 @@
             <!-- segundo quadrado -->
             <div class="col-6      ">
                 <div class="row justify-content-center align-items-center g-2">
+                    <div class="card-header w-50 text-center">
+                        Resultados do período
+                    </div>
                     <div class="square">
 
                         <div class="text-center bar green" data-height="{{ green }}">Receitas</div>

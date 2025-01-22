@@ -24,9 +24,9 @@ Este Projeto segue o que consta no tutorial disponível no site do prório Flask
 ![Tela](./app/static/midia/TelaAtual.gif)
 
 
- Na última atualização foram realizados updates na estrutua html possibilitando reutilizar elementos da tela e implementado uma nova tela com botões de navegação funcionais. 
+ Na última atualização foram realizados updates na tela de upload de arquivos possibilitando escolher o arquivo que será analizado. 
     
-    Todo projeto será realizado com micro atualizações respeitando a a filosofia do projeto: " Micro mudançãs geram grandes resultados a longo prazo!".
+* Todo projeto será realizado com micro atualizações respeitando a a filosofia do projeto: " Micro mudançãs geram grandes resultados a longo prazo!".
 
 <!-- 
 <p>
@@ -150,9 +150,11 @@ As tecnologias utilizadas neste projeto:
 
 ##
 
-![QR CODE para linkedin](<app/static/midia/Qrlogo-in.png>)
-
-
+<div style="display: inline_block" align="center">
+    <img src="app/static/midia/Qrlogo-in.png" height="150" width="140">
+    <sub>ㅤ</sub>
+    <img src="app/static/midia/Qrlogo-mpago.png" height="150" width="140">
+</div>
 
 ---
 Editado por [Jhone Antonio](www.linkedin.com/in/antoniojhone)
