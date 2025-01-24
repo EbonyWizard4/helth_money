@@ -1,7 +1,9 @@
 from flask import Flask, render_template, flash, redirect, url_for, request
 from werkzeug.utils import secure_filename
+from pypdf import PdfReader
 import random
 import os
+import re
 
 app = Flask(__name__)
 app.secret_key = "mysecretkey"
@@ -23,8 +25,9 @@ def home():
 # Leitura de PDF
 def read_pdf(filepath):
     with open(filepath, 'rb') as file:
-        reader = PyPDF2.PdfReader(file)
+        reader = PdfReader(file)
         text = ''.join(page.extract_text() for page in reader.pages)
+        # text = ''.join(page.extract_text() for page in reader.pages)
     return text
 
 @app.route("/upload")
@@ -43,12 +46,16 @@ def sobe_arquivo():
         flash('Nenhum arquivo foi enviado.')
         return redirect(url_for("upload"))
     if file:
+        # salva o arquivo selecionado no diretorio de uploads
         filename = secure_filename(file.filename)
         flash(f'{filename} enviado.')
         filepath = os.path.join(app.config['UPLOAD_FOLDER'], filename)
         file.save(filepath)
-        
-    return redirect(url_for("home"))
+
+        # Captura o texto do arquivo selecionado.
+        text = read_pdf(filepath)
+  
+    return redirect(url_for("upload"))
 
 if __name__=="__main__":
     app.run()

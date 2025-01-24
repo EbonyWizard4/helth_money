@@ -24,7 +24,7 @@ Este Projeto segue o que consta no tutorial disponível no site do prório Flask
 ![Tela](./app/static/midia/TelaAtual.gif)
 
 
- Na última atualização foram realizados updates na tela de upload de arquivos possibilitando escolher o arquivo que será analizado. 
+ Na última atualização foram realizados updates na estrutura de arquivos utilizando as facilidades de reuso de elementos de tela do flask e foi implementado a leitura do texto do arquivo para analise posterior.
     
 * Todo projeto será realizado com micro atualizações respeitando a a filosofia do projeto: " Micro mudançãs geram grandes resultados a longo prazo!".
 
