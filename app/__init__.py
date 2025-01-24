@@ -1,9 +1,13 @@
 from flask import Flask, render_template, flash, redirect, url_for, request
 from werkzeug.utils import secure_filename
 import random
+import os
 
 app = Flask(__name__)
 app.secret_key = "mysecretkey"
+UPLOAD_FOLDER = 'uploads'
+app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
 @app.route("/")
 def home():
@@ -14,7 +18,14 @@ def home():
         height = random.randint(10, 90)
         barra[bar] = height
     print(barra)
-    return render_template("index.html", green=barra[0], orange=barra[1])
+    return render_template("index/home.html", green=barra[0], orange=barra[1])
+
+# Leitura de PDF
+def read_pdf(filepath):
+    with open(filepath, 'rb') as file:
+        reader = PyPDF2.PdfReader(file)
+        text = ''.join(page.extract_text() for page in reader.pages)
+    return text
 
 @app.route("/upload")
 def upload():
@@ -34,6 +45,9 @@ def sobe_arquivo():
     if file:
         filename = secure_filename(file.filename)
         flash(f'{filename} enviado.')
+        filepath = os.path.join(app.config['UPLOAD_FOLDER'], filename)
+        file.save(filepath)
+        
     return redirect(url_for("home"))
 
 if __name__=="__main__":

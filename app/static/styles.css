@@ -4,7 +4,6 @@ body {
     justify-content: center;
     align-items: center; */
     height: 100vh;
-    background-color: #f4f4f4;
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -12,7 +11,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 70vh;
 }
 
 .square{
@@ -41,4 +40,9 @@ body {
 
 .orange {
     background-color: #ffa500;
+}
+
+.baner {
+    width: 10rem;
+    height: 6rem;
 }

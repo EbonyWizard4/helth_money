@@ -1,0 +1,47 @@
+{% extends 'index.html' %}
+{% block botao %}
+<a class="btn btn-outline-success me-2" href="{{ url_for('upload') }}">Add Extrato</a>
+{% endblock %}
+
+
+
+<!-- Conteúdo da pagina -->
+
+{% block conteúdo %}
+<div class="">
+<div class="row justify-content-center align-items-center g-2">
+    <!-- primeiro quadrado -->
+    <div class="col-6      ">
+
+        <div class="container">
+            <div class="card text-center">
+                <img class="img-fluid card-img-top " src="../static/midia/Ebw_Invest_wallpaper.jpg" alt="EBW Invest" />
+                <div class="card-body">
+                    <h4 class="card-title">Saúde financeira</h4>
+                    <p class="card-text">Lembre-se tudo que você precisa fazer é gastar menos do ganha!</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- segundo quadrado -->
+    <div class="col-6      ">
+        <div class="row justify-content-center align-items-center g-2">
+            <div class="card-header w-50 text-center">
+                Resultados do período
+            </div>
+            <div class="square">
+
+                <div class="text-center bar green" data-height="{{ green }}">Receitas</div>
+                <div class="text-center bar orange" data-height="{{ orange }}">Despesas</div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+</div>
+</div>
+{% endblock %}
